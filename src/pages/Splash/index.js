@@ -5,7 +5,7 @@ import {Logo} from '../../assets'
 const Splash = ({navigation}) => {
     useEffect(() => {
         setTimeout(() => {
-            navigation.replace('MainApp');
+            navigation.replace('Home');
         }, 3000)
     }, [navigation]);
 

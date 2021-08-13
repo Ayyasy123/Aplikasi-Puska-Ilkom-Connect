@@ -6,7 +6,6 @@ import GetStarted from './GetStarted'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import Menu from './Menu'
-import MainLayout from './MainLayout'
 
 export {
     Home,
@@ -17,5 +16,4 @@ export {
     SignIn,
     SignUp,
     Menu,
-    MainLayout
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import { createDrawerNavigator,  DrawerContentScrollView } from '@react-navigation/drawer' 
-import { Home, MainLayout } from '../pages'
+import { Home } from '../pages'
 import { WARNA_BIRU } from '../utils/constant'
 import { IconMenuClose } from '../assets'
 
@@ -65,7 +65,7 @@ const CustomDrawer = () => {
                 sceneContainerStyle= {{
                      backgroundColor: 'transparent',
                 }}
-                initialRouteName="MainLayout"
+                initialRouteName="Home"
                 drawerContent={props => {
                     return(
                         <CustomDrawerContent
@@ -74,8 +74,8 @@ const CustomDrawer = () => {
                     )
                 }}
              >
-                <Drawer.Screen name="MainLayout">
-                    {props => <MainLayout {...props}/>}
+                <Drawer.Screen name="Home">
+                    {props => <Home {...props}/>}
                 </Drawer.Screen>
             </Drawer.Navigator>
         </View>
